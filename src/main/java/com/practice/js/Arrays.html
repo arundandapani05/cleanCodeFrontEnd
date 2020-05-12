@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function myFunction() {
+            var arrayExample = new Array("Arun1", "Arun2");
+            document.getElementById("demo").innerHTML=arrayExample[0];
+        }
+        window.onload = function fun1() {
+            document.getElementById("demo").innerHTML = "Arun learned this";
+        }
+    </script>
+</head>
+<body>
+<button onclick="myFunction()">clickme</button>
+<p id="demo"></p>
+
+<p id="demo1"></p>
+
+<script>
+    var cars = new Array("Saab", "Volvo", "BMW");
+    document.getElementById("demo1").innerHTML = cars;
+
+
+</script>
+</body>
+</html>
