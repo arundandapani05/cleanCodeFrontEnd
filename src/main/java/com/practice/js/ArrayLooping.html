@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Looping</title>
+    <script>
+        window.onload = function loop() {
+            var fruitsArray = ["Apple", "orange"];
+
+            var text = "<ul>";
+            for (i = 0; i < fruitsArray.length; i++) {
+                text += "<li>" + fruitsArray[i] + "</li>"
+            }
+
+            text +="</ul";
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</head>
+<body>
+<p id="demo"></p>
+</body>
+</html>
