@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ForEach</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    var person = {Name:"Arun", Age:33, Place:"Hyderabad"};
+    var txt ="";
+    var x;
+    for(x in person){
+        txt+=person[x];
+    }
+    document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+
+
+</html>

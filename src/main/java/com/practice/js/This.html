@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript <i>this</i> Keyword</h2>
+
+<p>In this example, <b>this</b> refers to the window Object:</p>
+
+<p id="demo"></p>
+<button onclick=document.getElementById("demo").innerHTML="something">click</button>
+
+<script>
+    var x = this;
+    document.getElementById("demo").innerHTML = x;
+    function f() {
+        document.getElementById("demo").innerHTML = this;
+
+    }
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
