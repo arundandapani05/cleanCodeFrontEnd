@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class</title>
+</head>
+<body>
+<p id ="demo"></p>
+<script>
+    class Car{
+        Car(brand){
+            this.brand = brand;
+        }
+        explainBrand(){
+            return "The brand i have is " + this.brand;
+        }
+    }
+    myCar = new Car("Maruthi");
+    document.getElementById("demo").innerHTML=myCar.explainBrand();
+</script>
+
+
+
+
+</body>
+</html>
