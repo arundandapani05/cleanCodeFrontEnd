@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CallApply</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    const book = {
+        title: 'Brave New World',
+        author: 'Aldous Huxley',
+    }
+
+    function summary() {
+        console.log(`${this.title} was written by ${this.author}.`)
+    }
+
+    document.getElementById("demo").innerHTML = summary.call(book);
+</script>
+
+</body>
+</html>
