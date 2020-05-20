@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+
+    class testClassParent {
+        constructor(Place, Country) {
+            this.place = Place;
+            this.country = Country;
+        }
+
+        getFullAddress() {
+            return this.place + this.country;
+        }
+
+    }
+
+    class testClass extends testClassParent {
+        constructor(firstName, secondName, place, country) {
+            super(place, country);
+            this.firstName = firstName;
+            this.secondName = secondName;
+        }
+
+        getFullName() {
+            return this.firstName + this.secondName;
+        }
+
+    }
+
+    var x = new testClass("Arun", "Dandapani", "Hyd", "India");
+    document.getElementById("demo").innerHTML = x.country;
+
+    let animal = {
+        jumps: null
+    };
+    let rabbit = {
+        __proto__: animal,
+        jumps: true
+    };
+
+    alert(rabbit.jumps); // ? (1)
+
+    delete rabbit.jumps;
+
+    alert(rabbit.jumps); // ? (2)
+
+    delete animal.jumps;
+
+    alert(rabbit.jumps); // ? (3)
+</script>
+</body>
+</html>
