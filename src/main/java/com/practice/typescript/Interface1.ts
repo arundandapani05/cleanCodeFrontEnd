@@ -2,13 +2,11 @@ interface LabeledValue {
     label: string;
 }
 
-function printLabel(labeledObj: LabeledValue) {
+function printLabel(labeledObj: LabeledValue): { label: string } {
     console.log(labeledObj.label);
-}
-
-let example1 = (labelObject: LabeledValue) => {
-    labelObject.label;
+    return labeledObj;
 }
 
 let myObj = {size: 10, label: "Size 10 Object"};
-printLabel(myObj);
+let returnObj = printLabel({label: "arun"});
+//printLabel({label : ""});
