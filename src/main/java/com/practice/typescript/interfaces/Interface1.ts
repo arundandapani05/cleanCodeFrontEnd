@@ -9,4 +9,4 @@ function printLabel(labeledObj: LabeledValue): { label: string } {
 
 let myObj = {size: 10, label: "Size 10 Object"};
 let returnObj = printLabel({label: "arun"});
-//printLabel({label : ""});
+printLabel(myObj);
